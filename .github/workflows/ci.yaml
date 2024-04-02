@@ -32,3 +32,5 @@ jobs:
     - name: Push image
       run: |
         docker push hmatheus00/nlw.service.passin:${{steps.generate_sha.outputs.sha}}
+        docker tag hmatheus00/nlw.service.passin:${{steps.generate_sha.outputs.sha}} hmatheus00/nlw.service.passin:latest
+        docker push hmatheus00/nlw.service.passin:latest  
