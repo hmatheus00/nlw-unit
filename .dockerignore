@@ -1,0 +1,8 @@
+.git*
+dist
+node_modules
+
+Dockerfile
+.gitignore
+.dockerignore
+vercel.json
